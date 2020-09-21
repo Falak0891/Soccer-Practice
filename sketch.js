@@ -1,8 +1,8 @@
-var ball, playerPaddle, computerPaddle, edges;
+var ball, computerPaddle, userPaddle, edges;
 
 var ballImage, playerImage, robotImage;
 
-var gameState, compScore, playerScore;
+var gameState, computerScore, playerScore;
 
 var scoreSound, wall_hitSound,hitSound;
 
@@ -11,9 +11,9 @@ function preload(){
   ballImage = loadImage("ball.png");
   playerImage = loadImage("Player.png");
   robotImage =loadImage("robot.png");
-  scoreSound = loadSound('score.mp3');
-   wall_hitSound = loadSound('wall_hit.mp3');
-   hitSound = loadSound('hit.mp3');
+ // scoreSound = loadSound('score.mp3');
+   //wall_hitSound = loadSound('wall_hit.mp3');
+  // hitSound = loadSound('hit.mp3');
   
 }
 
