@@ -78,21 +78,21 @@ function draw() {
 
   //make the ball bounce off the user paddle
   if(ball.isTouching(userPaddle)){
-    hitSound.play();
+    //hitSound.play();
     ball.x = ball.x - 5;
     ball.velocityX = -ball.velocityX;
   }
 
   //make the ball bounce off the computer paddle
   if(ball.isTouching(computerPaddle)){
-    hitSound.play();
+    //hitSound.play();
     ball.x = ball.x + 5;
     ball.velocityX = -ball.velocityX;
   }
 
   //place the ball back in the centre if it crosses the screen
   if(ball.x > width || ball.x < 0){
-    scoreSound.play();
+   // scoreSound.play();
 
   if (ball.x < 0) {
       playerScore++;
@@ -113,7 +113,7 @@ function draw() {
   if (ball.isTouching(edges[2]) || ball.isTouching(edges[3])) {
     ball.bounceOff(edges[2]);
     ball.bounceOff(edges[3]);
-    wall_hitSound.play();
+    //wall_hitSound.play();
   }
 
   //add AI to the computer paddle so that it always hits the ball
