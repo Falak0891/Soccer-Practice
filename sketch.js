@@ -23,14 +23,14 @@ createCanvas(windowWidth,windowHeight);
 
 //create a user paddle sprite
 userPaddle = createSprite(width-20,height/2,10,70);
-userPaddle.addAnimation("player", playerImage);
+userPaddle.addImage("player", playerImage);
   
 //create a computer paddle sprite
 computerPaddle = createSprite(30,height/2,10,70);
-computerPaddle.addAnimation("comp", robotImage);
+computerPaddle.addImage("comp", robotImage);
 //create the pong ball
 ball = createSprite(width/2,height/2,12,12);
-ball.addAnimation("ball", ballImage);
+ball.addImage("ball", ballImage);
 computerScore = 0;
 playerScore = 0;
 gameState = "serve";
